@@ -1,0 +1,14 @@
+{
+  "schema": "mathesis.materials.v1",
+  "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+  "version": 2,
+  "repository_url": "https://github.com/mathesis-papers/6aec384da3c95318f8824b8f",
+  "site_url": "https://papers.trureturing.org/6aec384da3c95318f8824b8f/",
+  "doi": "10.5281/zenodo.23885951",
+  "reading": {
+    "en": "https://papers.trureturing.org/6aec384da3c95318f8824b8f/en/",
+    "zh": "https://papers.trureturing.org/6aec384da3c95318f8824b8f/zh/"
+  },
+  "slides": [],
+  "visualizations": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "members": [
+    {
+      "path": "README.md",
+      "bytes": 3220,
+      "sha256": "39157187b3cda7facd82b98e3f1f73bf8fb27b4e3939aafc5737987d7661a5b6"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 1713,
+      "sha256": "8e20485414f4577475c0ccd58e02ec41af525d53744c31b055277968d7ca7286"
+    },
+    {
+      "path": "note.tex",
+      "bytes": 12292,
+      "sha256": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2396,
+      "sha256": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 6088,
+      "sha256": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e"
+    }
+  ]
+}

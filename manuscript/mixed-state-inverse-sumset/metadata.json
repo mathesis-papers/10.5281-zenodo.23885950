@@ -1,0 +1,15 @@
+{
+  "id": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+  "revision": 2,
+  "problem_ids": ["bu-gu-jaffe-2025-mixed-state-inverse-sumset"],
+  "topic": "Refutation of the mixed-state inverse sumset estimate expected in Bu--Gu--Jaffe, arXiv:2401.14385v3, Remark 45, equation (58)",
+  "title": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We refute the mixed-state inverse sumset estimate expected in Remark 45, equation (58), of Bu, Gu and Jaffe, Quantum Ruzsa Divergence to Quantify Magic (arXiv:2401.14385v3). A computationally diagonal equal mixture of two basis states in dimension seven has quantum-doubling constant sqrt(2) and relative entropy log(7/2) from its mean state, while the proposed bound is at most (1/2)log(7). The contradiction uses exact inequalities and persists for every tensor power. For the same family, we verify that the weaker estimate (59) has a positive denominator and holds strictly, and give the equality case of the companion entropy-growth statement for computationally diagonal states.",
+  "summary": "An exact diagonal seven-dimensional counterexample to the expected mixed-state inverse sumset bound, with tensor-power counterexamples and direct verification of the weaker companion estimate on the same family.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean"
+}

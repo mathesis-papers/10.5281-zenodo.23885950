@@ -1,0 +1,264 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\MS}{\mathcal M}
+\title{A counterexample to Bu--Gu--Jaffe's expected\protect\\ mixed-state inverse sumset estimate}
+\author{Haobo Ma\thanks{ChronoAI Pte Ltd, Singapore.}\and
+Wenlin Zhang\thanks{National University of Singapore; ChronoAI Pte Ltd, Singapore.}}
+\date{1 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We refute the mixed-state inverse sumset estimate expected in Remark~45,
+equation~(58), of Bu, Gu and Jaffe, \emph{Quantum Ruzsa Divergence to Quantify
+Magic}~\cite[arXiv:2401.14385v3]{BGJ}.
+A computationally diagonal equal mixture of two basis states in dimension seven has
+quantum-doubling constant $\sqrt2$ and relative entropy $\log(7/2)$ from its
+mean state, while the proposed bound is at most $\tfrac12\log7$.
+The contradiction uses exact inequalities and persists for every tensor power.
+For the same family, we verify that the weaker estimate~(59) has a positive
+denominator and holds strictly, and give the equality case of the companion
+entropy-growth statement for computationally diagonal states.
+\end{abstract}
+
+\section{The expected estimate and its conventions}
+
+Bu, Gu and Jaffe extend entropic inverse sumset theory to discrete quantum
+convolution~\cite{BGJ}. Their Remark~45 expects a mixed-state extension of
+the pure-state bound in Theorem~44. We show that its displayed estimate~(58)
+fails already for a diagonal state, so the obstruction is classical rather
+than a consequence of noncommutativity.
+
+Let $d$ be an odd prime and $s,t\in\mathbb F_d\setminus\{0\}$ satisfy
+$s^2+t^2=1$. On computational basis vectors, the unitary and convolution are
+\begin{equation}\label{eq:conv}
+ U_{s,t}|i,j\rangle=|si+tj,-ti+sj\rangle,\qquad
+ \rho\boxtimes_{s,t}\sigma=\Tr_2\bigl[U_{s,t}(\rho\otimes\sigma)U_{s,t}^*\bigr].
+\end{equation}
+For $n$ qudits, this map acts coordinatewise. All logarithms are natural;
+$S(\rho)=-\Tr(\rho\log\rho)$, with $0\log0=0$.
+We use $D(\rho\Vert\sigma)=\Tr\rho(\log\rho-\log\sigma)$ when
+$\operatorname{supp}\rho\subseteq\operatorname{supp}\sigma$, and $+\infty$
+otherwise.
+We use the source's characteristic function
+$\Xi_\rho(p,q)=\Tr(\rho w(-p,-q))$, where
+$Z|j\rangle=\omega^j|j\rangle$, $X|j\rangle=|j+1\rangle$,
+$\omega=e^{2\pi i/d}$ and
+$w(p,q)=\omega^{-pq/2}Z^pX^q$; division by two in this exponent means
+multiplication by $2^{-1}$ in $\mathbb F_d$.
+The mean state $\MS(\rho)$ retains precisely the characteristic coefficients
+of modulus one~\cite[Definitions~6--8 and 10]{BGJ}. Write
+\begin{align*}
+ R(\rho)&=\operatorname{rank}\MS(\rho),&
+ \lambda&=(1-\operatorname{MG}(\rho))^2,\\
+ \delta_q[\rho]&=\exp\bigl(S(\rho\boxtimes\rho)-S(\rho)\bigr),&
+ \operatorname{MG}(\rho)&=1-\max_{0<|\Xi_\rho(x)|<1}|\Xi_\rho(x)|,
+\end{align*}
+with the source's convention $\operatorname{MG}=0$ when the maximizing set is
+empty. Its expected estimate, when $1<\delta_q[\rho]\le C$, is
+\begin{equation}\label{eq:expected}
+ D(\rho\Vert\MS(\rho))\ \le\
+ \frac{\log R(\rho)}{\log R(\rho)-\log\bigl[1+\lambda
+ (R(\rho)\Tr\rho^2-1)\bigr]}\log C.
+ \tag{BGJ 58}
+\end{equation}
+Our examples satisfy strict positivity of every scalar logarithm argument in
+the displayed estimates and of their denominators, as well as the source's
+zero-mean condition: $\Xi_{\MS(\rho)}$ takes values in $\{0,1\}$.
+
+The mean-state framework was developed in~\cite{PNAS,DQG}; the classical entropic
+inverse problem appears in Tao~\cite{Tao}. Recent work of Goodarzi develops
+submodular entropy bounds for compatible quantum convolutions~\cite[Theorem~4.1]{Goodarzi}.
+The question here is the specific quantitative mixed-state estimate
+\eqref{eq:expected}. The single-qudit witness below is the construction in the
+trureturing source~\cite{Source}. We give its elementary exposition and derive
+the tensor-product and equation-(59) consequences below.
+
+\section{An exact counterexample}
+
+\begin{theorem}\label{thm:counterexample}
+Take $d=7$, $s=t=2$ and
+$\rho=\tfrac12(|0\rangle\langle0|+|1\rangle\langle1|)$.
+Then \eqref{eq:expected} is false for $C=\sqrt2$.
+In fact, its right-hand side is at most $\tfrac12\log7$ even if the actual
+$\lambda$ is replaced by any number in $[0,1]$, whereas
+$D(\rho\Vert\MS(\rho))=\log(7/2)>\tfrac12\log7$.
+\end{theorem}
+
+\begin{proof}
+The parameters are admissible since $2^2+2^2=8=1$ in $\mathbb F_7$.
+For a diagonal state, \eqref{eq:conv} is the law of $2I+2J$ modulo seven,
+where $I,J$ are independent and uniform on $\{0,1\}$. Thus
+\begin{equation}\label{eq:output}
+ \rho\boxtimes\rho
+ =\tfrac14|0\rangle\langle0|+\tfrac12|2\rangle\langle2|
+   +\tfrac14|4\rangle\langle4|.
+\end{equation}
+Consequently
+\begin{equation}\label{eq:entropies}
+ S(\rho)=\log2,\qquad S(\rho\boxtimes\rho)=\tfrac32\log2,
+ \qquad \delta_q[\rho]=\sqrt2>1,\qquad \Tr\rho^2=\tfrac12.
+\end{equation}
+If $q\ne0$, $w(-p,-q)$ has zero diagonal and hence
+$\Xi_\rho(p,q)=0$. On the clock axis,
+\begin{equation}\label{eq:fourier}
+ \Xi_\rho(p,0)=\frac{1+\omega^{-p}}2,\qquad
+ |\Xi_\rho(p,0)|=\left|\cos\frac{\pi p}{7}\right|.
+\end{equation}
+The modulus is one only for $p=0$. Characteristic-function inversion therefore
+gives
+\begin{equation}\label{eq:mean}
+ \MS(\rho)=I_7/7,\qquad R(\rho)=7,\qquad
+ D(\rho\Vert\MS(\rho))=\log7-S(\rho)=\log(7/2).
+\end{equation}
+In particular $\rho$ is zero-mean. The largest remaining modulus in
+\eqref{eq:fourier} is $\cos(\pi/7)$, so the actual factor is
+$\lambda=\cos^2(\pi/7)\in(0,1)$.
+
+For any numerical replacement $0\le\ell\le1$ of $\lambda$, put
+$A=1+\tfrac52\ell$.
+Then $1\le A\le7/2$ and
+$B=\log7-\log A\ge\log2>0$.
+At $C=\sqrt2$, the proposed right-hand side is bounded by
+\[
+ \frac{\log7}{B}\,\frac{\log2}{2}
+ \le\frac12\log7
+ <\log7-\log2.
+\]
+The final strict inequality is equivalent to $7>4$.
+This contradicts \eqref{eq:mean} and proves the theorem.
+\end{proof}
+
+\begin{corollary}\label{cor:tensor}
+For every integer $n\ge1$, the state $\rho_n=\rho^{\otimes n}$ in
+$(\mathbb C^7)^{\otimes n}$ violates \eqref{eq:expected} at $C=2^{n/2}$.
+\end{corollary}
+\begin{proof}
+Characteristic functions and convolution outputs factor under tensor products.
+A product of numbers of modulus at most one has modulus one only when every
+factor does. Thus $\MS(\rho_n)=I_{7^n}/7^n$, and the largest nonunit modulus
+remains $\cos(\pi/7)$: attain it in one coordinate and use the origin in the
+others. Hence
+\[
+ R_n=7^n,\quad \Tr\rho_n^2=2^{-n},\quad S(\rho_n)=n\log2,
+ \quad D_n=n\log(7/2),\quad \log\delta_q[\rho_n]=\tfrac n2\log2.
+\]
+With $A_n=1+\lambda((7/2)^n-1)$, the denominator
+$B_n=n\log7-\log A_n$ is at least $n\log2$ for every $\lambda\in[0,1]$.
+The proposed bound is therefore at most $\tfrac n2\log7<D_n$.
+\end{proof}
+
+\section{The companion statements}
+
+Remark~45 also records the weaker estimate
+\begin{equation}\label{eq:weaker}
+ D(\rho\Vert\MS(\rho))\ \le\
+ \frac{\log R(\rho)-S(\rho)}{\log R(\rho)-\log\bigl[1+\lambda
+ (R(\rho)\Tr\rho^2-1)\bigr]-S(\rho)}\log C,
+ \tag{BGJ 59}
+\end{equation}
+under a positive-denominator hypothesis.
+
+\begin{corollary}\label{cor:weaker}
+For every $\rho_n$ in Corollary~\ref{cor:tensor}, the denominator in
+\eqref{eq:weaker} is positive, and that inequality holds strictly for
+every $C\ge\delta_q[\rho_n]$.
+\end{corollary}
+\begin{proof}
+The actual factor satisfies $3/4<\lambda=\cos^2(\pi/7)<1$, since
+$0<\pi/7<\pi/6$. The notation from Corollary~\ref{cor:tensor} gives
+\[
+ 0<B_n-n\log2
+ =-\log\!\left(\lambda+(1-\lambda)(2/7)^n\right)
+ <-\log\lambda<\log(4/3)<\tfrac12\log2
+ \le\tfrac n2\log2.
+\]
+Here $\log(4/3)<\tfrac12\log2$ follows by squaring from $16/9<2$.
+The numerator in \eqref{eq:weaker} equals $D_n>0$ and
+$\log C\ge\tfrac n2\log2$. Its right-hand side is therefore strictly
+larger than $D_n$, proving the assertion without a numerical approximation.
+\end{proof}
+
+For completeness, the entropy-growth statement in the same remark holds for all
+computationally diagonal states on $(\mathbb C^7)^{\otimes n}$ with $s=t=2$.
+Let $X,Y$ be independent copies of any finitely
+supported random variable on $\mathbb F_7^n$. Then
+\[
+ H(2X+2Y)\ge H(2X+2Y\mid Y)=H(X).
+\]
+Equality means that the conditional laws of $2X+2Y$ are identical for all
+$Y$ in its support. Fix a support point $a$. After dividing by two, this says
+that the law of $X$ is invariant under every translation $y-a$ with $y$ in
+the support. Let $K$ be the subgroup generated by these differences.
+The support lies in $a+K$, and translation invariance forces the law to be
+uniform on that coset. Conversely, $2K=K$, so if $X$ is uniform on $a+K$, then $2X+2Y$
+is uniform on $4a+K$ and has the same entropy. Such diagonal coset states are
+minimal stabilizer-projection states. Indeed, with $K^\perp$ the annihilator of
+$K$, the projection onto the coset's span is
+\[
+ P_{a+K}=\frac1{|K^\perp|}\sum_{p\in K^\perp}\omega^{-p\cdot a}Z^p,
+ \qquad \rho_{a+K}=\frac{P_{a+K}}{|K|}.
+\]
+Conversely, a diagonal minimal stabilizer-projection state has only clock
+coefficients in its Weyl expansion; its clock eigenvalue constraints define an
+affine subspace, and its normalized projection is uniform there.
+This proves the equality classification within the computationally diagonal
+class at these parameters, as mentioned in Remark~45, consistently
+with the classical zero-doubling characterization~\cite[Theorem~1.11(i), \S5]{Tao}.
+
+The counterexample family specifically violates~(58), satisfies~(59), and has
+strict entropy growth; the source's pure-state Theorem~44 is not refuted.
+The complementary quantum-difference constant of Remark~43 also
+equals $\sqrt2$ for the single-qudit example: the law of $-2I+2J$ has weights
+$1/2,1/4,1/4$ at $0,2,5$, respectively. A bound with the same right-hand side
+and that constant would fail for the same reason.
+
+\paragraph{Verification.}
+The proofs above cover every $n\ge1$. An exact-arithmetic checker in the
+accompanying source archive verifies the seven-dimensional permutation, both
+convolution marginals, the characteristic-function modulus-one set in
+$\mathbb Q(e^{2\pi i/7})$, and tensor-output entropies for $1\le n\le8$.
+The archive's member manifest fixes the checker version; its finite checks
+corroborate, rather than establish, the all-$n$ proofs.
+
+\begin{thebibliography}{9}
+\setlength{\itemsep}{0pt}
+\bibitem{BGJ} K.~Bu, W.~Gu and A.~Jaffe,
+\emph{Quantum Ruzsa Divergence to Quantify Magic},
+IEEE Transactions on Information Theory \textbf{71} (2025), 2726--2740.
+\href{https://doi.org/10.1109/TIT.2025.3543276}{doi:10.1109/TIT.2025.3543276}.
+The numbered statements used here refer to
+\href{https://arxiv.org/abs/2401.14385v3}{arXiv:2401.14385v3} (23 March 2026).
+\bibitem{DQG} K.~Bu, W.~Gu and A.~Jaffe,
+\emph{Discrete quantum Gaussians and central limit theorem},
+Advances in Mathematics \textbf{503} (2026), 111204.
+\href{https://doi.org/10.1016/j.aim.2026.111204}{doi:10.1016/j.aim.2026.111204}.
+\bibitem{PNAS} K.~Bu, W.~Gu and A.~Jaffe,
+\emph{Quantum entropy and central limit theorem},
+Proceedings of the National Academy of Sciences \textbf{120}(25) (2023), e2304589120.
+\href{https://doi.org/10.1073/pnas.2304589120}{doi:10.1073/pnas.2304589120}.
+\bibitem{Tao} T.~Tao,
+\emph{Sumset and inverse sumset theory for Shannon entropy},
+Combinatorics, Probability and Computing \textbf{19} (2010), 603--639.
+\href{https://doi.org/10.1017/S0963548309990642}{doi:10.1017/S0963548309990642}.
+\bibitem{Goodarzi} M.~M.~Goodarzi,
+\emph{Submodularity of entropy under quantum convolution},
+\href{https://arxiv.org/abs/2609.40211v1}{arXiv:2609.40211v1} (2026).
+\bibitem{Source} trureturing contributors,
+\emph{MixedStateInverseSumsetRefutation}, source development,
+revision \texttt{57b811c}, declaration \texttt{result} (2026).
+\href{https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean}{Pinned source file}.
+\end{thebibliography}
+
+\smallskip\noindent\small
+\textcopyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

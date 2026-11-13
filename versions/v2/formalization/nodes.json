@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "57b811cedb64c8065c6afac0da57d0fe2c8aa5ab",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean"
+      },
+      "lineage": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:s1",
+      "macros": {
+        "\\MS": "\\mathcal M",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+      "scope": "in_scope",
+      "statement": "Take $d=7$, $s=t=2$ and\n$\\rho=\\tfrac12(|0\\rangle\\langle0|+|1\\rangle\\langle1|)$.\nThen \\eqref{eq:expected} is false for $C=\\sqrt2$.\nIn fact, its right-hand side is at most $\\tfrac12\\log7$ even if the actual\n$\\lambda$ is replaced by any number in $[0,1]$, whereas\n$D(\\rho\\Vert\\MS(\\rho))=\\log(7/2)>\\tfrac12\\log7$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
+      "toolchain": null,
+      "version": 2,
+      "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s2",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "57b811cedb64c8065c6afac0da57d0fe2c8aa5ab",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean"
+      },
+      "lineage": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:s2",
+      "macros": {
+        "\\MS": "\\mathcal M",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+      "scope": "in_scope",
+      "statement": "For every integer $n\\ge1$, the state $\\rho_n=\\rho^{\\otimes n}$ in\n$(\\mathbb C^7)^{\\otimes n}$ violates \\eqref{eq:expected} at $C=2^{n/2}$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
+      "toolchain": null,
+      "version": 2,
+      "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "57b811cedb64c8065c6afac0da57d0fe2c8aa5ab",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean"
+      },
+      "lineage": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:s3",
+      "macros": {
+        "\\MS": "\\mathcal M",
+        "\\Tr": "\\operatorname{Tr}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Automatic translation needs attention before a proof can be checked.",
+      "proof_basis": null,
+      "proof_state": "needs_attention",
+      "receipt": null,
+      "record": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+      "scope": "in_scope",
+      "statement": "For every $\\rho_n$ in Corollary~\\ref{cor:tensor}, the denominator in\n\\eqref{eq:weaker} is positive, and that inequality holds strictly for\nevery $C\\ge\\delta_q[\\rho_n]$.",
+      "status": "needs_attention",
+      "target_digest": null,
+      "title": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
+      "toolchain": null,
+      "version": 2,
+      "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+    }
+  ]
+}

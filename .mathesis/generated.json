@@ -1,0 +1,36 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/mixed-state-inverse-sumset/README.md",
+    "manuscript/mixed-state-inverse-sumset/manifest.json",
+    "manuscript/mixed-state-inverse-sumset/metadata.json",
+    "manuscript/mixed-state-inverse-sumset/note.tex",
+    "manuscript/mixed-state-inverse-sumset/verification.json",
+    "manuscript/mixed-state-inverse-sumset/verify.py",
+    "paper.json",
+    "paper.pdf"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "5f7f5e6e2df628b4fe177f6330479dc584b76a88f3088469819c9503acb365fe",
+    "CITATION.cff": "00a5802750dd960ab63909c7a3c45b6d617d991ecf75c89210fb822145437caa",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "3d9df3ae4c13e3fec13d12ac09bef2d5452ff6ded09a7de539d07834e1f48091",
+    "formalization/nodes.json": "87660649fb2c5515456aa3cb4924d79d03b44603a5daacd6b97585b0d17e3724",
+    "manuscript/mixed-state-inverse-sumset/README.md": "39157187b3cda7facd82b98e3f1f73bf8fb27b4e3939aafc5737987d7661a5b6",
+    "manuscript/mixed-state-inverse-sumset/manifest.json": "d90d8d4320a731f1eae9d8bd7cf96ff3142b610780e474c4537ea674da615e62",
+    "manuscript/mixed-state-inverse-sumset/metadata.json": "8e20485414f4577475c0ccd58e02ec41af525d53744c31b055277968d7ca7286",
+    "manuscript/mixed-state-inverse-sumset/note.tex": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab",
+    "manuscript/mixed-state-inverse-sumset/verification.json": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5",
+    "manuscript/mixed-state-inverse-sumset/verify.py": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e",
+    "paper.json": "f702342836238a42fdaa2bb339184498912f9a6c64d964f795c4809e042fceaf",
+    "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1"
+  },
+  "snapshot_identity": "cf7dddc7adeedae37e3b7aa89874f0211d88d227e9e87e76ca70c780fd1b9b3d"
+}

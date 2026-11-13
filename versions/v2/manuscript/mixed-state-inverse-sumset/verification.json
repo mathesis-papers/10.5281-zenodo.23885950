@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "status": "all assertions passed",
+  "arithmetic": "fractions and Q[zeta_7] modulo 1+x+...+x^6; floats only in diagnostics",
+  "dimension": 7,
+  "convolution_parameters_mod_7": [
+    2,
+    2
+  ],
+  "permutation_images_checked": 49,
+  "state_diagonal": [
+    "1/2",
+    "1/2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "convolution_diagonal": [
+    "1/4",
+    "0",
+    "1/2",
+    "0",
+    "1/4",
+    "0",
+    "0"
+  ],
+  "complement_diagonal": [
+    "1/2",
+    "0",
+    "1/4",
+    "0",
+    "0",
+    "1/4",
+    "0"
+  ],
+  "characteristic_indices_checked": 49,
+  "modulus_one_indices": [
+    [
+      0,
+      0
+    ]
+  ],
+  "input_entropy_coefficient_of_log_2": "1",
+  "output_entropy_coefficient_of_log_2": "3/2",
+  "purity": "1/2",
+  "output_purity": "3/8",
+  "tensor_checks": [
+    {
+      "copies": 1,
+      "nonzero_output_probabilities": 3,
+      "output_entropy_coefficient_of_log_2": "3/2"
+    },
+    {
+      "copies": 2,
+      "nonzero_output_probabilities": 9,
+      "output_entropy_coefficient_of_log_2": "3"
+    },
+    {
+      "copies": 3,
+      "nonzero_output_probabilities": 27,
+      "output_entropy_coefficient_of_log_2": "9/2"
+    },
+    {
+      "copies": 4,
+      "nonzero_output_probabilities": 81,
+      "output_entropy_coefficient_of_log_2": "6"
+    },
+    {
+      "copies": 5,
+      "nonzero_output_probabilities": 243,
+      "output_entropy_coefficient_of_log_2": "15/2"
+    },
+    {
+      "copies": 6,
+      "nonzero_output_probabilities": 729,
+      "output_entropy_coefficient_of_log_2": "9"
+    },
+    {
+      "copies": 7,
+      "nonzero_output_probabilities": 2187,
+      "output_entropy_coefficient_of_log_2": "21/2"
+    },
+    {
+      "copies": 8,
+      "nonzero_output_probabilities": 6561,
+      "output_entropy_coefficient_of_log_2": "12"
+    }
+  ],
+  "analytic_proof_inputs": [
+    "0 <= lambda <= 1",
+    "7 > 4",
+    "3/4 < cos(pi/7)^2 < 1",
+    "16/9 < 2"
+  ],
+  "diagnostic_only_not_proof": {
+    "lambda": 0.811744901,
+    "relative_entropy": 1.252762968,
+    "equation_58_right_side_at_C_sqrt_2": 0.805199214,
+    "lambda_uniform_upper_bound_for_equation_58": 0.972955075,
+    "equation_59_denominator": 0.144410849,
+    "equation_59_right_side_at_C_sqrt_2": 3.006523146
+  },
+  "scope": "Exact finite checks at d=7 and tensor outputs for 1<=n<=8; the all-n result and trigonometric inequalities are proved in note.tex."
+}
