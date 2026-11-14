@@ -13,7 +13,8 @@
     "manuscript/mixed-state-inverse-sumset/verification.json",
     "manuscript/mixed-state-inverse-sumset/verify.py",
     "paper.json",
-    "paper.pdf"
+    "paper.pdf",
+    "source.archive"
   ],
   "generator_version": "0.1.0",
   "sha256": {
@@ -29,8 +30,9 @@
     "manuscript/mixed-state-inverse-sumset/note.tex": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab",
     "manuscript/mixed-state-inverse-sumset/verification.json": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5",
     "manuscript/mixed-state-inverse-sumset/verify.py": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e",
-    "paper.json": "80c18a9d43ecdbabb91d35aa5bffd98b204509ec300deb6bfa8ba38d8515ac57",
-    "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1"
+    "paper.json": "f9532acfffce30e51a9b98e2213c031232ce4495ed66bb90dea0232e721dba74",
+    "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
+    "source.archive": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac"
   },
-  "snapshot_identity": "6769145a449927d848468ac7bcb4b79dd3d32d998c12eceb6c4c00e8ab4879b9"
+  "snapshot_identity": "c227ba9b41aa816a0ade2c45240322eff6e49793c027c9e083be807c0e60f094"
 }
