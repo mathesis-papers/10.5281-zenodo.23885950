@@ -24,8 +24,10 @@
 - M. M. Goodarzi. *Submodularity of entropy under quantum convolution*. [arXiv:2609.40211v1](https://arxiv.org/abs/2609.40211v1) (2026), Theorem 4.1; further context cited in the note.
 - trureturing contributors. [MixedStateInverseSumsetRefutation, paper-cited source](https://github.com/the-omega-institute/trureturing/blob/57b811cedb64c8065c6afac0da57d0fe2c8aa5ab/D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.lean).
 
-<style>pre:has(> code[class*="typst"]) { display: none; }</style>
+<section hidden="hidden">
 
 ```{=typst}
 #pagebreak()
 ```
+
+</section>
