@@ -12,9 +12,9 @@
     "manuscript/mixed-state-inverse-sumset/note.tex",
     "manuscript/mixed-state-inverse-sumset/verification.json",
     "manuscript/mixed-state-inverse-sumset/verify.py",
+    "manuscript/original-source.archive",
     "paper.json",
-    "paper.pdf",
-    "source.archive"
+    "paper.pdf"
   ],
   "generator_version": "0.1.0",
   "sha256": {
@@ -30,9 +30,9 @@
     "manuscript/mixed-state-inverse-sumset/note.tex": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab",
     "manuscript/mixed-state-inverse-sumset/verification.json": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5",
     "manuscript/mixed-state-inverse-sumset/verify.py": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e",
-    "paper.json": "f78282a6e5a64e1e206516ab5a4857c4ad7ef080127ca0ab5c814eaf0f4b8613",
-    "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
-    "source.archive": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac"
+    "manuscript/original-source.archive": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac",
+    "paper.json": "71ad83dfe8122ee6aa66cff5ead1eac5bc558023a8e252e7ac09b5f6f068156f",
+    "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1"
   },
-  "snapshot_identity": "a5ced85646d9b39ac58256a1a9aa3cc908a06b09907923d35ef8c0dddf7d0b0f"
+  "snapshot_identity": "cabb1c33b8a527a6ee00836693b9eecaaead74192818e12aaa57be9f25091aff"
 }

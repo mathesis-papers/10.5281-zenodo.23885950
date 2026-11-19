@@ -1,0 +1,28 @@
+{
+  "results": {
+    "public-negation": {
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Exactly the public negation of claim, including all prime dimensions, nonzero admissible parameters, three density states identifying the mean and convolution, real C, doubling and positivity premises. The Lean claim has no zero-mean restriction; the exhibited proof witness satisfies the source restriction. This is a logical consequence of catalog s1, not the full explicit witness statement."
+    },
+    "seven-level-witness": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Manuscript Theorem 1 gives a fixed explicit state, C=sqrt(2), its exact relative entropy and the upper bound for every replacement factor ell in [0,1]. Public result states only not claim; private witness and numerical_bound lemmas supply proof ingredients but are not public GIDs for this complete result. Reuse those ingredients and expose the stronger statement."
+    },
+    "tensor-obstruction": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Manuscript Corollary 2 quantifies over every integer n>=1 on (C^7) tensor n. The public negation is one single-qudit universal refutation; it does not state tensor mean factorization, invariant actual gap factor, additive entropies or the all-n violations. Source and nontruncated Quantum inventory inspected; no matching public statement located in this scoped search."
+    },
+    "weaker-estimate": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Manuscript Corollary 3 proves positive denominator and strict equation-(59) validity for every n>=1 and every C>=2^(n/2). The inspected source treats equation (58), not this consequence. Reuse tensor identities and prove only the remaining exact logarithmic inequalities. No matching declaration located in the inspected source and scoped Quantum inventory."
+    }
+  }
+}

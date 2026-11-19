@@ -1,0 +1,172 @@
+{
+  "voice": "af_heart",
+  "speed": 0.94,
+  "say": {
+    "Lean": "Leen",
+    "Bu": "Boo",
+    "Gu": "Goo",
+    "Jaffe": "Jaffee"
+  },
+  "music": {
+    "bpm": 80,
+    "progression": "a-minor"
+  },
+  "scenes": [
+    {
+      "id": "question",
+      "name": "THE INVERSE QUESTION",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "If adding two independent copies creates little extra uncertainty, must the original distribution be close to a structured one?",
+          "把两个独立副本相加后，如果不确定性增加得少，原分布就一定接近某种结构分布吗？"
+        ],
+        [
+          "Tao studied this inverse question for classical entropy. Bu, Gu and Jaffe proposed a quantitative estimate for mixed quantum states.",
+          "Tao 研究了经典熵的这个逆问题。Bu、Gu 和 Jaffe 对混合量子态提出了一个定量估计。"
+        ],
+        [
+          "Haobo Ma and Wenlin Zhang explain a counterexample made from two equally likely outcomes among seven positions.",
+          "Haobo Ma 和 Wenlin Zhang 解释了一个反例：在七个位置中，只让两个结果等概率出现。"
+        ]
+      ]
+    },
+    {
+      "id": "pairs",
+      "name": "FOUR INPUT PAIRS",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "Label a fair coin zero or one. Choose two independent outcomes, I and J, and retain twice I plus twice J, modulo seven.",
+          "把公平硬币的结果记为零和一，独立选择 I 和 J，保留模七的二倍 I 加二倍 J。"
+        ],
+        [
+          "The four equally likely input pairs give zero, two, two, and four. The two middle events merge.",
+          "四种等可能的输入对给出零、二、二、四。中间两个事件合并。"
+        ],
+        [
+          "So the output probabilities are one quarter, one half, and one quarter. The coefficients are admissible because four plus four equals one modulo seven.",
+          "所以输出概率是四分之一、二分之一、四分之一。系数合法，因为四加四在模七意义下等于一。"
+        ]
+      ]
+    },
+    {
+      "id": "entropy",
+      "name": "HOW MUCH GROWTH?",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "Entropy is average information: sum each probability times minus its natural logarithm. A fair coin has entropy log two.",
+          "熵是平均信息量：把每个概率乘以其自然对数的负值再求和。公平硬币的熵是 log 2。"
+        ],
+        [
+          "For our output, each of the three nonzero terms contributes half of log two. The total is three halves of log two.",
+          "对这个输出，三个非零项各贡献半个 log 2，总和为三倍的半个 log 2。"
+        ],
+        [
+          "The increase is half of log two. Exponentiating gives the quantum doubling constant, the square root of two.",
+          "熵增加了半个 log 2。取指数后，量子倍增常数就是根号二。"
+        ]
+      ]
+    },
+    {
+      "id": "mean",
+      "name": "THE COMPARISON STATE",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "This diagonal quantum state is an ordinary probability distribution, with no coherence. Its mean state keeps only perfectly determined Fourier-like coefficients.",
+          "这个对角量子态就是普通概率分布，没有相干项。它的均值态只保留完全确定的 Fourier 型系数。"
+        ],
+        [
+          "On the clock axis, each coefficient averages two unit arrows. Away from the origin their directions differ, so the average has length less than one.",
+          "在钟方向上，每个系数是两个单位箭头的平均。离开原点后，箭头方向不同，平均长度就小于一。"
+        ],
+        [
+          "Shift coefficients vanish. Only the origin survives, making the mean uniform on all seven positions. The relative entropy from that mean is log seven over two.",
+          "移动方向的系数为零。只剩原点系数，所以均值态在七个位置上均匀分布。相对于均值态的相对熵是 log(7/2)。"
+        ]
+      ]
+    },
+    {
+      "id": "contradiction",
+      "name": "THE EXACT CONTRADICTION",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "The proposed bound uses the mean rank, purity, and a coefficient factor between zero and one. Here the rank is seven and purity is one half.",
+          "预期上界使用均值态的秩、纯度和一个介于零与一之间的系数因子。本例秩为七，纯度为二分之一。"
+        ],
+        [
+          "Even allowing every factor in that interval, the denominator is at least log two. At the actual doubling constant, the proposed bound is at most half of log seven.",
+          "即使允许因子取遍整个区间，分母也至少为 log 2。在实际倍增常数处，预期上界至多为半个 log 7。"
+        ],
+        [
+          "But log seven over two is strictly larger than half of log seven, because seven is greater than four. This is an exact contradiction, with a positive denominator.",
+          "但 log(7/2) 严格大于半个 log 7，因为七大于四。这是分母为正时的精确矛盾。"
+        ]
+      ]
+    },
+    {
+      "id": "copies",
+      "name": "EVERY POSITIVE NUMBER OF COPIES",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "Now take n independent copies, for any positive integer n. Input entropy and relative entropy add, while the mean spreads over seven to the n labels.",
+          "现在取 n 个独立副本，其中 n 是任意正整数。输入熵和相对熵相加，均值态铺在七的 n 次方个标签上。"
+        ],
+        [
+          "The discrepancy is n times log seven over two. The proposed bound is still at most n times half of log seven. Every positive number of copies fails.",
+          "差异是 n 倍 log(7/2)，预期上界仍至多是 n 倍的半个 log 7。每个正整数份副本都使它失败。"
+        ]
+      ]
+    },
+    {
+      "id": "weaker",
+      "name": "WHY THE WEAKER BOUND SURVIVES",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "The source also gives a weaker estimate, equation fifty nine. For this family its denominator is positive and smaller than half of log two.",
+          "原文还给出了较弱的式五十九。对本族，它的分母为正，且小于半个 log 2。"
+        ],
+        [
+          "The allowed log C is at least n times half of log two. Dividing by the smaller positive denominator makes that weaker bound strictly larger than the actual discrepancy.",
+          "允许的 log C 至少为 n 倍的半个 log 2。除以更小的正分母后，这个较弱上界严格大于实际差异。"
+        ],
+        [
+          "This proves the weaker estimate strictly for these product states, including at the smallest allowed C. It does not prove it for every mixed state.",
+          "这证明了较弱估计对这些乘积态严格成立，包括最小允许 C 的情形；没有证明任意混合态的情形。"
+        ]
+      ]
+    },
+    {
+      "id": "scope",
+      "name": "WHAT IS ESTABLISHED",
+      "lead": 1.0,
+      "tail": 1.0,
+      "lines": [
+        [
+          "The public Lean theorem proves the universal single-system estimate false. Its proof uses this same seven-level witness.",
+          "公开 Lean 定理证明单系统的普遍估计为假，证明使用同一个七维见证。"
+        ],
+        [
+          "The explicit all-factor statement, every tensor power, and the weaker estimate have complete written arguments in the note and focused formalization requests.",
+          "明确的全因子陈述、每个张量幂和较弱估计在原稿中都有完整书面论证，并有范围明确的形式化请求。"
+        ],
+        [
+          "The pure-state theorem remains intact. The obstruction is already classical. The note credits the single-system construction to trureturing contributors.",
+          "纯态定理不受影响。障碍已经存在于经典概率中。原稿将单系统构造归功于 trureturing contributors。"
+        ]
+      ]
+    }
+  ]
+}

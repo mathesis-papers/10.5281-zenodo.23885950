@@ -1,0 +1,17 @@
+[book]
+version = "2"
+authors = ["Haobo Ma", "Wenlin Zhang"]
+license = "CC-BY-4.0"
+editions = ["zh", "en"]
+date = "2026-11-05"
+[book.title]
+zh = "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate"
+en = "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate"
+[outputs]
+html = true
+pdf = ["academic"]
+epub = true
+[mathesis]
+work = "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+version = 2
+source_title = "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate"

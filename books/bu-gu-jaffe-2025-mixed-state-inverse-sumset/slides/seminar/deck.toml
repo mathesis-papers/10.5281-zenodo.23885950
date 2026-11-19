@@ -1,0 +1,12 @@
+kind = "academic"
+editions = ["zh", "en"]
+aspect = "4:3"
+structure_colour = "#0e2c8e"
+short_author = "H. Ma, W. Zhang"
+short_title = "Two points among seven"
+date = "Version 2 · 2026"
+navigation_symbols = false
+
+[title]
+zh = "两点分布怎样推翻一个逆和集估计"
+en = "How a two-point law defeats an inverse sumset estimate"

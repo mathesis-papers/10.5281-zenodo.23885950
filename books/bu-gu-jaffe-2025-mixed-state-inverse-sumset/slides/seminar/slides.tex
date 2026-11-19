@@ -1,0 +1,192 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{两点分布怎样推翻一个逆和集估计}
+\author{Haobo Ma \and Wenlin Zhang}
+\institute{Haobo Ma: Chrono AI, Singapore\\Wenlin Zhang: NUS and Chrono AI, Singapore}
+\date{Version 2, 2026}
+\begin{document}
+% Manuscript: title and author metadata
+\begin{frame}
+\titlepage
+\note{解释第 2 版的核心机制；报告与论文同署名。}
+\end{frame}
+% Manuscript: §§1–3
+\begin{frame}{路线}
+\tableofcontents
+\note{先看硬币实验，再看界的矛盾，最后讨论独立副本。}
+\end{frame}
+\section{问题}
+% Manuscript: §1 and abstract
+\begin{frame}{问题与答案}
+相加后熵增长得少，是否保证接近结构态？
+\begin{itemize}
+\item Tao：经典熵逆和集问题。
+\item Bu、Gu、Jaffe：量子卷积的定量预期。
+\item 两点经典分布已使混合态式 (58) 失败。
+\end{itemize}
+\[\log(7/2)>\tfrac12\log7.\]
+\note{先提出逆问题：我们从相加的结果倒推原分布。反例针对特定定量公式，不是否定整个逆和集理论。}
+\end{frame}
+% Manuscript: §2, output formula
+\begin{frame}{四种输入，三个输出}
+$I,J$ 独立且均匀取 $0,1$；所有运算模七。
+\[
+\begin{array}{c|cccc}
+(I,J)&(0,0)&(0,1)&(1,0)&(1,1)\\\hline
+2I+2J&0&2&2&4
+\end{array}
+\]
+\[\Pr(0)=\tfrac14,\quad\Pr(2)=\tfrac12,\quad\Pr(4)=\tfrac14.\]
+两个中间事件合并。
+\note{每列输入概率都是 $1/4$。不是三种输出等概率：标签 $2$ 有两条来源。这正是后面熵的系数。}
+\end{frame}
+\section{实验}
+% Manuscript: §1, convolution; §2
+\begin{frame}{一个普通概率量子态}
+\[\rho=\operatorname{diag}(1/2,1/2,0,0,0,0,0).\]
+\begin{itemize}
+\item 对角元非负、和为一：合法密度态。
+\item 没有相干项；量子熵就是概率熵。
+\end{itemize}
+\[(i,j)\mapsto(2i+2j,-2i+2j).\]
+$2^2+2^2=1$ 模七；保留第一个输出。
+\note{七维指七个可区分的基态。变换的行列式为 $1$，因此在标签对上可逆。丢弃另一个输出对角态时就得到上一页的分布。}
+\end{frame}
+% Manuscript: §2, entropy identities
+\begin{frame}{增长只有半个硬币熵}
+\[H(p)=-\sum_{p_j>0}p_j\log p_j.\]
+\[S(\rho)=\log2.\]
+\[S(\rho\boxtimes\rho)=\tfrac32\log2.\]
+\[\delta_q=\exp(S_{\mathrm{out}}-S_{\mathrm{in}})=\sqrt2>1.\]
+自然对数；$0\log0=0$。
+\note{每个 $1/4$ 项贡献半个 $\log2$，$1/2$ 项也贡献半个 $\log2$，三项共 $3\log2/2$。熵确实增加，问题是增加幅度如何控制结构。}
+\end{frame}
+% Manuscript: §2, characteristic function and mean
+\begin{frame}{均值态为何均匀}
+只保留模为一的特征系数。
+\[\Xi_\rho(p,0)=\frac{1+\omega^{-p}}2,\quad\omega=e^{2\pi i/7}.\]
+$p\ne0$ 时：不同方向的两个单位箭头平均后变短。
+
+$q\ne0$ 时：移动算符使对角贡献为零。
+\[\mathcal M(\rho)=I_7/7,\qquad R=7.\]
+\note{这里的均值不是算术平均。只有原点系数的模为一。Weyl 反演因此只留下单位矩阵项，归一化后为 $I_7/7$；它也满足来源的零均值条件。}
+\end{frame}
+% Manuscript: §1, equation (58)
+\begin{frame}{待检验的具体上界}
+记 $P=\operatorname{Tr}\rho^2$，$R=\operatorname{rank}\mathcal M(\rho)$，
+\[A=1+\lambda(RP-1),\quad B=\log R-\log A.\]
+条件：$1\mathrel{<}\delta_q\le C$、$A>0$、$B>0$。
+\[D(\rho\Vert\mathcal M(\rho))\le\frac{\log R}{B}\log C.\tag{58}\]
+本例：$P=1/2$，$\lambda=\cos^2(\pi/7)\in(0,1)$。
+\note{纯度是概率平方和。相对熵是信息差异。因子 $\lambda$ 是最大非零、非单位特征模的平方；本例不存在空集约定问题。这里明确分母必须为正。}
+\end{frame}
+\section{矛盾}
+% Manuscript: Theorem 1
+\begin{frame}{明确反例}
+\begin{bookresult}{seven-level-witness}
+$d=7$，$s=t=2$，$\rho$ 为上述两点等概率态。
+
+$C=\sqrt2$ 时，即使 $\lambda$ 换成任意 $\ell\in[0,1]$，
+\[\mathrm{RHS}_{58}\le\tfrac12\log7\mathrel{<}\log(7/2)=D.\]
+\end{bookresult}
+\note{这是原稿 Theorem 1 的完整核心陈述，包含所有替换因子。它比公开 Lean 的普遍命题否定多出明确的见证信息，因此保留书面证明身份。}
+\end{frame}
+% Manuscript: Theorem 1, proof
+\begin{frame}{矛盾最终只是七大于四}
+对任意 $0\le\ell\le1$：
+\[1\le1+5\ell/2\le7/2.\]
+\[B_\ell\ge\log2>0.\]
+\[\frac{\log7}{B_\ell}\frac{\log2}{2}\le\frac{\log7}{2}.\]
+但 $D=\log7-\log2>\tfrac12\log7$，因为 $7>4$。
+\note{分母下界检查了有效性，也直接给出右端上界。严格比较等价于 $\log7>2\log2$。没有小数近似，也不需要算三角函数的近似值。}
+\end{frame}
+\section{推论}
+% Manuscript: Corollary 2
+\begin{frame}{任意多份独立副本}
+\begin{bookresult}{tensor-obstruction}
+对每个整数 $n\ge1$，$\rho_n=\rho^{\otimes n}$ 在 $C=2^{n/2}$ 时违反式 (58)。
+\end{bookresult}
+\[D_n=n\log(7/2),\qquad\log\delta_q=\tfrac n2\log2.\]
+\[\mathrm{RHS}_{58}\le\tfrac n2\log7\mathrel{<}D_n.\]
+独立性使熵相加；最大非单位模不变。
+\note{特征函数因子化后，模为一要求每个坐标都在原点，所以均值态均匀铺在 $7^n$ 个标签上。最大非单位模由一个非原点坐标取到，其余取原点。这个论证对全部 $n\ge1$ 成立。}
+\end{frame}
+% Manuscript: Corollary 3
+\begin{frame}{较弱上界仍严格成立}
+\begin{bookresult}{weaker-estimate}
+对每个 $n\ge1$ 和 $C\ge2^{n/2}$，式 (59) 分母为正，且严格成立。
+\end{bookresult}
+\[E_n=-\log\bigl(\lambda+(1-\lambda)(2/7)^n\bigr).\]
+\[0\mathrel{<}E_n\mathrel{<}\tfrac12\log2\le\log C.\]
+因此 $D_n\mathrel{<}(D_n/E_n)\log C$。
+\note{这里必须使用实际的 $\lambda=\cos^2(\pi/7)$。式 (59) 的分子是 $D_n$，分母是 $E_n$。结论甚至在 $C=2^{n/2}$ 时严格成立，但仅对本族证明。}
+\end{frame}
+\section{意义}
+% Manuscript: §3, companion statements
+\begin{frame}{这项结果修正了什么}
+\begin{itemize}
+\item 障碍已存在于普通经典概率中。
+\item 混合态式 (58) 失败；纯态 Theorem 44 不受影响。
+\item 式 (59) 对本族成立；未给出普遍替代界。
+\item 原稿将单系统构造归功于 trureturing contributors。
+\end{itemize}
+\note{把失败范围说清楚：这是一个明确的混合态定量预期，不是所有量子熵不等式。均值态框架仍然有意义；公式需要修正。}
+\end{frame}
+\appendix
+\section{技术附录}
+% Manuscript: Corollary 2, proof
+\begin{frame}{乘积族的分母界}
+\[R_n=7^n,\quad P_n=2^{-n},\quad S_n=n\log2.\]
+\[A_n=1+\ell((7/2)^n-1),\quad 0\le\ell\le1.\]
+\[1\le A_n\le(7/2)^n.\]
+\[B_n=n\log7-\log A_n\ge n\log2>0.\]
+\note{边界 $\ell=0,1$ 都包含；$n\ge1$。}
+\end{frame}
+% Manuscript: Corollary 3, proof
+\begin{frame}{严格对数比较}
+$n\ge1$.
+\[\tfrac34\mathrel{<}\lambda=\cos^2(\pi/7)\mathrel{<}1.\]
+\[\lambda\mathrel{<}\lambda+(1-\lambda)(2/7)^n\mathrel{<}1.\]
+\[0\mathrel{<}E_n\mathrel{<}-\log\lambda\mathrel{<}\log(4/3).\]
+\[\log(4/3)\mathrel{<}\tfrac12\log2\quad(16/9\mathrel{<}2).\]
+\note{这给出式 (59) 分母的正性及严格上界。}
+\end{frame}
+% Manuscript: §3, unnumbered equality discussion
+\begin{frame}{零熵增的边界}
+$n\ge1$，$X,Y$ 为 $\mathbb F_7^n$ 上同一分布的独立副本。
+\[H(2X+2Y)\ge H(2X+2Y\mid Y)=H(X).\]
+\[\text{等号}\quad\Longleftrightarrow\quad X\text{ 在 }a+K\text{ 上均匀}.\]
+$K$ 是支持差生成的加法子群，$a$ 是任意支持点。
+
+\note{等号意味着所有条件输出分布相同。选支持点 $a$，分布在每个 $y-a$ 平移下不变，从而在它们生成的子群 $K$ 下不变；支持恰好为 $a+K$。反方向输出均匀于 $4a+K$。}
+\end{frame}
+% Manuscript: §2; public formal source
+\begin{frame}{公开形式结论}
+\begin{bookresult}{public-negation}
+对素数 $d$、非零 $s,t$ 满足 $s^2+t^2=1$、密度态 $\rho,\sigma,\tau$，如下普遍蕴含
+\[\sigma=\mathcal M(\rho),\quad\tau=\rho\boxtimes\rho,\]
+\[1\mathrel{<}\delta_q\le C,\quad A>0,\quad B>0\]
+\[\Longrightarrow\quad D(\rho\Vert\sigma)\le(\log R/B)\log C\]
+为假（$C\in\mathbb R$）。
+\end{bookresult}
+\note{否定命题与明确的见证定理不同。公开证明使用同一见证，但不会由这条声明自动得到张量族或式 (59)。}
+\end{frame}
+% Manuscript: bibliography
+\begin{frame}{主要来源}
+\small
+Haobo Ma and Wenlin Zhang, version 2.\\
+\href{https://doi.org/10.5281/zenodo.23885951}{DOI:10.5281/zenodo.23885951}.
+\medskip
+
+K. Bu, W. Gu, A. Jaffe, \emph{Quantum Ruzsa Divergence to Quantify Magic}.\\
+\href{https://doi.org/10.1109/TIT.2025.3543276}{IEEE TIT 71 (2025), 2726--2740}.\\
+Numbering: arXiv:2401.14385v3, Remark 45, (58)--(59).
+\medskip
+
+T. Tao, \emph{Sumset and inverse sumset theory for Shannon entropy}.\\
+\href{https://doi.org/10.1017/S0963548309990642}{CPC 19 (2010), 603--639}.
+\note{完整参考文献见读物来源章。原稿报告的有限算术检查只提供佐证，所有正整数份副本由数学证明覆盖。}
+\end{frame}
+% Manuscript: formal evidence ledger
+\FormalVerification
+\end{document}

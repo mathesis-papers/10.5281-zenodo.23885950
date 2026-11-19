@@ -1,0 +1,17 @@
+{
+  "schema": "trureturing-books.lock.v1",
+  "repo": "the-omega-institute/trureturing",
+  "branch": "dev",
+  "commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+  "pinned_at": "2026-11-08T12:32:04Z",
+  "declarations": {
+    "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result": {
+      "module": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation",
+      "name": "D5.S3.Quantum.Magic.MixedStateInverseSumsetRefutation.result",
+      "kind": "theorem",
+      "statement_id": "sha256:836eb623a109913a57f7eb0b5d3e06b301969b3d3bdf77cc3d3c37f36b6b2ed0",
+      "line": 309,
+      "signature": "theorem result : ¬ claim"
+    }
+  }
+}

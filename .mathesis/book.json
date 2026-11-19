@@ -1,0 +1,55 @@
+{
+  "book": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
+  "pending_claims": [],
+  "results": {
+    "public-negation": {
+      "claim": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s1",
+      "gids": [
+        "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result"
+      ],
+      "comparison_verdict": "same",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8"
+    },
+    "seven-level-witness": {
+      "claim": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s1",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Theorem 1 — Explicit seven-level witness",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/236"
+      }
+    },
+    "tensor-obstruction": {
+      "claim": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s2",
+      "gids": [],
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 2 — Tensor-power obstruction",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/237"
+      }
+    },
+    "weaker-estimate": {
+      "claim": "collected:bu-gu-jaffe-2025-mixed-state-inverse-sumset:2:s3",
+      "gids": [],
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "formalization_request": {
+        "label": "Corollary 3 — Strict weaker estimate",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/238"
+      }
+    }
+  },
+  "stage": "complete",
+  "titles": {
+    "en": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
+    "zh": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate"
+  },
+  "version": 2,
+  "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+}

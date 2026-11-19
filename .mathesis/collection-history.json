@@ -1,0 +1,23 @@
+{
+  "schema": "mathesis.collection-history.v1",
+  "sha256": {
+    "versions/v2/.mathesis/generated.json": "7ee755094139cddbf68a319c1ad7d095dd815040b88307f1be729039642fcef1",
+    "versions/v2/CHANGELOG.md": "5f7f5e6e2df628b4fe177f6330479dc584b76a88f3088469819c9503acb365fe",
+    "versions/v2/CITATION.cff": "00a5802750dd960ab63909c7a3c45b6d617d991ecf75c89210fb822145437caa",
+    "versions/v2/CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "versions/v2/LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "versions/v2/README.md": "3d9df3ae4c13e3fec13d12ac09bef2d5452ff6ded09a7de539d07834e1f48091",
+    "versions/v2/formalization/nodes.json": "87660649fb2c5515456aa3cb4924d79d03b44603a5daacd6b97585b0d17e3724",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/README.md": "39157187b3cda7facd82b98e3f1f73bf8fb27b4e3939aafc5737987d7661a5b6",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/manifest.json": "d90d8d4320a731f1eae9d8bd7cf96ff3142b610780e474c4537ea674da615e62",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/metadata.json": "8e20485414f4577475c0ccd58e02ec41af525d53744c31b055277968d7ca7286",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/note.tex": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/verification.json": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5",
+    "versions/v2/manuscript/mixed-state-inverse-sumset/verify.py": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e",
+    "versions/v2/paper.json": "f702342836238a42fdaa2bb339184498912f9a6c64d964f795c4809e042fceaf",
+    "versions/v2/paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
+    "versions/v2/source.archive": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac"
+  },
+  "source_commit": "773c37c5dd582f51dc21014f161e0ea271426f3b",
+  "work": "bu-gu-jaffe-2025-mixed-state-inverse-sumset"
+}

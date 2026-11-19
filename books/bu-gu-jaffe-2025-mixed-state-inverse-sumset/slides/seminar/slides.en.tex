@@ -1,0 +1,192 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{How a two-point law defeats an inverse sumset estimate}
+\author{Haobo Ma \and Wenlin Zhang}
+\institute{Haobo Ma: Chrono AI, Singapore\\Wenlin Zhang: NUS and Chrono AI, Singapore}
+\date{Version 2, 2026}
+\begin{document}
+% Manuscript: title and author metadata
+\begin{frame}
+\titlepage
+\note{Explain the central mechanism of version 2, retaining the paper authors and their affiliations.}
+\end{frame}
+% Manuscript: §§1–3
+\begin{frame}{Outline}
+\tableofcontents
+\note{Begin with the coin experiment, derive the contradiction, then discuss independent copies.}
+\end{frame}
+\section{Question}
+% Manuscript: §1 and abstract
+\begin{frame}{Question and answer}
+Does limited entropy growth force closeness to structure?
+\begin{itemize}
+\item Tao: the classical entropic inverse-sumset problem.
+\item Bu, Gu, Jaffe: a quantitative quantum expectation.
+\item A two-point classical law defeats mixed-state (58).
+\end{itemize}
+\[\log(7/2)>\tfrac12\log7.\]
+\note{Start with the inverse question: infer input structure from the behavior of addition. The counterexample targets a specific quantitative formula, rather than the whole inverse-sumset program.}
+\end{frame}
+% Manuscript: §2, output formula
+\begin{frame}{Four inputs, three outputs}
+$I,J$ are independent fair choices from $0,1$; work modulo seven.
+\[
+\begin{array}{c|cccc}
+(I,J)&(0,0)&(0,1)&(1,0)&(1,1)\\\hline
+2I+2J&0&2&2&4
+\end{array}
+\]
+\[\Pr(0)=\tfrac14,\quad\Pr(2)=\tfrac12,\quad\Pr(4)=\tfrac14.\]
+The two middle events merge.
+\note{Each input column has probability $1/4$. The three output values are not equally likely: label $2$ has two sources. That multiplicity gives the entropy coefficients.}
+\end{frame}
+\section{Experiment}
+% Manuscript: §1, convolution; §2
+\begin{frame}{An ordinary probability state}
+\[\rho=\operatorname{diag}(1/2,1/2,0,0,0,0,0).\]
+\begin{itemize}
+\item Nonnegative diagonal, trace one: a density state.
+\item No coherence; quantum entropy is probability entropy.
+\end{itemize}
+\[(i,j)\mapsto(2i+2j,-2i+2j).\]
+$2^2+2^2=1$ modulo seven; retain the first output.
+\note{Seven dimensions mean seven distinguishable basis states. The transformation has determinant $1$ and is invertible on label pairs. Discarding the other output gives the previous probability law for diagonal inputs.}
+\end{frame}
+% Manuscript: §2, entropy identities
+\begin{frame}{Growth by half a coin entropy}
+\[H(p)=-\sum_{p_j>0}p_j\log p_j.\]
+\[S(\rho)=\log2.\]
+\[S(\rho\boxtimes\rho)=\tfrac32\log2.\]
+\[\delta_q=\exp(S_{\mathrm{out}}-S_{\mathrm{in}})=\sqrt2>1.\]
+Natural logarithms; $0\log0=0$.
+\note{Each $1/4$ term contributes half of $\log2$, and the $1/2$ term contributes another half. The sum is $3\log2/2$. Entropy does increase; the question is how its growth controls structure.}
+\end{frame}
+% Manuscript: §2, characteristic function and mean
+\begin{frame}{Why the mean is uniform}
+Retain exactly the characteristic coefficients of modulus one.
+\[\Xi_\rho(p,0)=\frac{1+\omega^{-p}}2,\quad\omega=e^{2\pi i/7}.\]
+For $p\ne0$: averaging distinct unit arrows shortens them.
+
+For $q\ne0$: a shift gives zero diagonal contribution.
+\[\mathcal M(\rho)=I_7/7,\qquad R=7.\]
+\note{The mean is not an arithmetic average. Only the origin coefficient has modulus one. Weyl inversion leaves the identity term, normalized to $I_7/7$. Its characteristic function also meets the source's zero-mean condition.}
+\end{frame}
+% Manuscript: §1, equation (58)
+\begin{frame}{The precise proposed bound}
+Write $P=\operatorname{Tr}\rho^2$, $R=\operatorname{rank}\mathcal M(\rho)$,
+\[A=1+\lambda(RP-1),\quad B=\log R-\log A.\]
+Domain: $1\mathrel{<}\delta_q\le C$, $A>0$, $B>0$.
+\[D(\rho\Vert\mathcal M(\rho))\le\frac{\log R}{B}\log C.\tag{58}\]
+Here $P=1/2$, $\lambda=\cos^2(\pi/7)\in(0,1)$.
+\note{Purity is the sum of squared probabilities. Relative entropy is an information discrepancy. The factor $\lambda$ is the square of the largest nonzero, nonunit characteristic modulus; the empty-set convention does not arise here. Emphasize the positive-denominator premise.}
+\end{frame}
+\section{Contradiction}
+% Manuscript: Theorem 1
+\begin{frame}{The explicit counterexample}
+\begin{bookresult}{seven-level-witness}
+$d=7$, $s=t=2$, and $\rho$ is the equal two-point state.
+
+At $C=\sqrt2$, even replacing $\lambda$ by any $\ell\in[0,1]$,
+\[\mathrm{RHS}_{58}\le\tfrac12\log7\mathrel{<}\log(7/2)=D.\]
+\end{bookresult}
+\note{This is the core statement of manuscript Theorem 1, including every replacement factor. It supplies explicit witness information beyond the public Lean negation and therefore retains its written-proof status.}
+\end{frame}
+% Manuscript: Theorem 1, proof
+\begin{frame}{The contradiction is seven greater than four}
+For any $0\le\ell\le1$:
+\[1\le1+5\ell/2\le7/2.\]
+\[B_\ell\ge\log2>0.\]
+\[\frac{\log7}{B_\ell}\frac{\log2}{2}\le\frac{\log7}{2}.\]
+Yet $D=\log7-\log2>\tfrac12\log7$, because $7>4$.
+\note{The denominator lower bound checks the domain and bounds the right-hand side. The strict comparison is equivalent to $\log7>2\log2$. No decimal approximation or numerical trigonometry is needed.}
+\end{frame}
+\section{Consequences}
+% Manuscript: Corollary 2
+\begin{frame}{Any positive number of copies}
+\begin{bookresult}{tensor-obstruction}
+For every integer $n\ge1$, $\rho_n=\rho^{\otimes n}$ violates (58) at $C=2^{n/2}$.
+\end{bookresult}
+\[D_n=n\log(7/2),\qquad\log\delta_q=\tfrac n2\log2.\]
+\[\mathrm{RHS}_{58}\le\tfrac n2\log7\mathrel{<}D_n.\]
+Independence adds entropies; the largest nonunit modulus stays fixed.
+\note{Factorization makes modulus one require the origin in every coordinate, so the mean is uniform on $7^n$ labels. The largest nonunit modulus is attained in one nonorigin coordinate with the others at the origin. The argument holds for all $n\ge1$.}
+\end{frame}
+% Manuscript: Corollary 3
+\begin{frame}{The weaker bound holds strictly}
+\begin{bookresult}{weaker-estimate}
+For every $n\ge1$ and $C\ge2^{n/2}$, (59) has positive denominator and holds strictly.
+\end{bookresult}
+\[E_n=-\log\bigl(\lambda+(1-\lambda)(2/7)^n\bigr).\]
+\[0\mathrel{<}E_n\mathrel{<}\tfrac12\log2\le\log C.\]
+Thus $D_n\mathrel{<}(D_n/E_n)\log C$.
+\note{Here we must use the actual $\lambda=\cos^2(\pi/7)$. The numerator of (59) is $D_n$ and its denominator is $E_n$. The inequality remains strict at $C=2^{n/2}$, but is proved here only for this family.}
+\end{frame}
+\section{Scope}
+% Manuscript: §3, companion statements
+\begin{frame}{What the result changes}
+\begin{itemize}
+\item The obstruction already exists in classical probability.
+\item Mixed-state (58) fails; pure-state Theorem 44 is intact.
+\item (59) holds for this family; no universal replacement is given.
+\item The note credits the single-system construction to trureturing contributors.
+\end{itemize}
+\note{Keep the failure precise: this is one quantitative mixed-state expectation, not every quantum entropy inequality. The mean-state framework remains meaningful; the proposed formula needs correction.}
+\end{frame}
+\appendix
+\section{Appendix}
+% Manuscript: Corollary 2, proof
+\begin{frame}{Product denominator bound}
+\[R_n=7^n,\quad P_n=2^{-n},\quad S_n=n\log2.\]
+\[A_n=1+\ell((7/2)^n-1),\quad 0\le\ell\le1.\]
+\[1\le A_n\le(7/2)^n.\]
+\[B_n=n\log7-\log A_n\ge n\log2>0.\]
+\note{The endpoints $\ell=0,1$ are included; $n\ge1$.}
+\end{frame}
+% Manuscript: Corollary 3, proof
+\begin{frame}{The strict logarithmic comparison}
+$n\ge1$.
+\[\tfrac34\mathrel{<}\lambda=\cos^2(\pi/7)\mathrel{<}1.\]
+\[\lambda\mathrel{<}\lambda+(1-\lambda)(2/7)^n\mathrel{<}1.\]
+\[0\mathrel{<}E_n\mathrel{<}-\log\lambda\mathrel{<}\log(4/3).\]
+\[\log(4/3)\mathrel{<}\tfrac12\log2\quad(16/9\mathrel{<}2).\]
+\note{This proves positivity and the strict upper bound for the denominator in (59).}
+\end{frame}
+% Manuscript: §3, unnumbered equality discussion
+\begin{frame}{The zero-growth boundary}
+$n\ge1$; $X,Y$ are independent copies on $\mathbb F_7^n$.
+\[H(2X+2Y)\ge H(2X+2Y\mid Y)=H(X).\]
+\[\text{Equality}\quad\Longleftrightarrow\quad X\text{ uniform on }a+K.\]
+$K$ is the additive subgroup generated by support differences; $a$ is a support point.
+
+\note{Equality makes all conditional output laws identical. Fix a support point $a$: the law is invariant under every $y-a$, hence under the subgroup $K$ they generate. Its support is exactly $a+K$. Conversely the output is uniform on $4a+K$.}
+\end{frame}
+% Manuscript: §2; public formal source
+\begin{frame}{The public formal conclusion}
+\begin{bookresult}{public-negation}
+For prime $d$, nonzero $s,t$ with $s^2+t^2=1$, and density states $\rho,\sigma,\tau$, the universal implication
+\[\sigma=\mathcal M(\rho),\quad\tau=\rho\boxtimes\rho,\]
+\[1\mathrel{<}\delta_q\le C,\quad A>0,\quad B>0\]
+\[\Longrightarrow\quad D(\rho\Vert\sigma)\le(\log R/B)\log C\]
+is false ($C\in\mathbb R$).
+\end{bookresult}
+\note{The negation and the explicit witness theorem differ. The public proof uses this witness, but this declaration alone does not state the tensor family or (59).}
+\end{frame}
+% Manuscript: bibliography
+\begin{frame}{Principal sources}
+\small
+Haobo Ma and Wenlin Zhang, version 2.\\
+\href{https://doi.org/10.5281/zenodo.23885951}{DOI:10.5281/zenodo.23885951}.
+\medskip
+
+K. Bu, W. Gu, A. Jaffe, \emph{Quantum Ruzsa Divergence to Quantify Magic}.\\
+\href{https://doi.org/10.1109/TIT.2025.3543276}{IEEE TIT 71 (2025), 2726--2740}.\\
+Numbering: arXiv:2401.14385v3, Remark 45, (58)--(59).
+\medskip
+
+T. Tao, \emph{Sumset and inverse sumset theory for Shannon entropy}.\\
+\href{https://doi.org/10.1017/S0963548309990642}{CPC 19 (2010), 603--639}.
+\note{See the reading for the full bibliography. Finite arithmetic checks reported by the note corroborate the construction; the mathematical proof covers every positive number of copies.}
+\end{frame}
+% Manuscript: formal evidence ledger
+\FormalVerification
+\end{document}

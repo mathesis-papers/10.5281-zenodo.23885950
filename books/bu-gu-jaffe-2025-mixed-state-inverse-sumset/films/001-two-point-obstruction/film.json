@@ -1,0 +1,29 @@
+{
+  "duration": "3:56",
+  "id": "001-two-point-obstruction",
+  "lean": [
+    "D5/S3/Quantum/Magic/MixedStateInverseSumsetRefutation.result"
+  ],
+  "narration": {
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "language": "en",
+    "voice": "af_heart"
+  },
+  "outputs": {
+    "cover": "bu-gu-jaffe-2025-mixed-state-inverse-sumset_001_cover.jpg",
+    "narrated_720p": "bu-gu-jaffe-2025-mixed-state-inverse-sumset_001_720p_narrated.mp4"
+  },
+  "publication_basis": "pinned",
+  "released": "2026-11-16",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "subject": "https://github.com/the-omega-institute/trureturing",
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "summary": "A fair two-point law gives a positive-denominator contradiction to mixed-state estimate (58); tensor copies preserve it while (59) survives.",
+  "summary_zh": "公平两点分布在正分母范围内推翻混合态式 (58)；独立副本保留矛盾，而式 (59) 对本族仍成立。",
+  "title": "Two points among seven",
+  "title_zh": "七个位置上的两点反例"
+}
