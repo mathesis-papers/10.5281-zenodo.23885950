@@ -1,7 +1,7 @@
 {
   "git_blobs": {
     ".github/workflows/pages.yml": "7879724db1358178aad7e9bed326a44be44f5a6a",
-    ".mathesis/generated.json": "14bc0eae722fb71d126786e86edd83fc6575399e",
+    ".mathesis/generated.json": "93f57f70ae62e100d5682899e5b8ec0cdd3e43d9",
     "CHANGELOG.md": "72449b730968659c7f4e584e1ad9a1679a358931",
     "CITATION.cff": "99b108ed05d06a571d371385752b41c018169911",
     "CONTRIBUTING.md": "ea69168fc2cb506b57b00de1ef588aaf011aa3da",
@@ -14,7 +14,7 @@
     "manuscript/mixed-state-inverse-sumset/note.tex": "8445c9b537d3560e952430aef45bfc9266ec8802",
     "manuscript/mixed-state-inverse-sumset/verification.json": "54e93e39a53df812cc20d3feeb5e9bc2af7ee858",
     "manuscript/mixed-state-inverse-sumset/verify.py": "e4e488ea4b268c2b2f4b24426374798ab36405d4",
-    "paper.json": "3652d2d438c3409fc8e1ce3ac4635e5a5d9a19ea",
+    "paper.json": "39f92f68e8545a813615019695a5cbce10d4f17f",
     "paper.pdf": "d55ef5dcab3a4eb9724c0c2f3d6e3e6e17f766e6",
     "site/en/index.html": "a11b60d40104c7c6cd064c8cdd936bc93ddcfeb2",
     "site/index.html": "4c28c08d6a8590831a64812a05a3e05da7a076c8",
@@ -41,7 +41,7 @@
   "schema": "mathesis.paper-collection.v1",
   "sha256": {
     ".github/workflows/pages.yml": "f15d983dcb8f324ffdedb50b05f7380e11fda8723d49b5c8f10ef0f414612372",
-    ".mathesis/generated.json": "12954dfb1c5256479acf61418cea3f4bbb9031ccc0451a1bc349309cb8f14dc9",
+    ".mathesis/generated.json": "28e86191bd675fb7dcec30a9ff4c171afde6695dc3c3f21684b071cc0ecbed99",
     "CHANGELOG.md": "5f7f5e6e2df628b4fe177f6330479dc584b76a88f3088469819c9503acb365fe",
     "CITATION.cff": "00a5802750dd960ab63909c7a3c45b6d617d991ecf75c89210fb822145437caa",
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
@@ -54,7 +54,7 @@
     "manuscript/mixed-state-inverse-sumset/note.tex": "ec34d7f7a5194a6853c3e3e0e88a634a35ab88572950612704051879efb07bab",
     "manuscript/mixed-state-inverse-sumset/verification.json": "3fd7d21fd8ce2546c840144cbc4d7b741e3eca944e4b52147c7f9a9a7d8307a5",
     "manuscript/mixed-state-inverse-sumset/verify.py": "ad57304a86b031906760cd22c9ec601725ad9ca70964e850aa76b6f4745b8b3e",
-    "paper.json": "f9532acfffce30e51a9b98e2213c031232ce4495ed66bb90dea0232e721dba74",
+    "paper.json": "f78282a6e5a64e1e206516ab5a4857c4ad7ef080127ca0ab5c814eaf0f4b8613",
     "paper.pdf": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
     "site/en/index.html": "85cbefb92477fee767ec28976415224d17455ac6426a7df505835c4043cea9bf",
     "site/index.html": "f5cad8081fde10775a4a586841f98442fe28dc397d93858730228f933684e898",

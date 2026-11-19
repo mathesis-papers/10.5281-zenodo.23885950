@@ -2,16 +2,16 @@
   "files": {
     "pdf": {
       "bytes": 90845,
-      "matches_public": null,
+      "matches_public": true,
       "path": "paper.pdf",
-      "public_sha256": null,
+      "public_sha256": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
       "sha256": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1"
     },
     "source": {
       "bytes": 11530,
-      "matches_public": null,
+      "matches_public": true,
       "path": "source.archive",
-      "public_sha256": null,
+      "public_sha256": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac",
       "sha256": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac"
     }
   },
@@ -38,6 +38,8 @@
     "license": "CC-BY-4.0",
     "msc": [],
     "pdf": {
+      "bytes": 90845,
+      "sha256": "b4b28d1bd7cda426d37481e91318edf131c5b41a7afe818234a85d20ff4a38b1",
       "url": "/api/v1/collected-papers/bu-gu-jaffe-2025-mixed-state-inverse-sumset/files/pdf?version=2"
     },
     "previous_version": null,
@@ -46,6 +48,8 @@
     "record": "bu-gu-jaffe-2025-mixed-state-inverse-sumset",
     "repository_name": "10.5281-zenodo.23885950",
     "source": {
+      "bytes": 11530,
+      "sha256": "80a80ddb1885b50e1da525787c20ee0f8bf4f2517806abcedbac96de8c4131ac",
       "url": "/api/v1/collected-papers/bu-gu-jaffe-2025-mixed-state-inverse-sumset/files/source?version=2"
     },
     "title": "A counterexample to Bu--Gu--Jaffe's expected mixed-state inverse sumset estimate",
